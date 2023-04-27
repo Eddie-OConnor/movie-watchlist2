@@ -1,0 +1,36 @@
+<!-- If anything breaks randomly, confirm API key -->
+
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <header>
+        <div id="header-div">
+            <h1>Find Your Film</h1>
+            <a href="watchlist.html"><h4>My Watchlist</h4></a>
+        </div>
+    </header>
+    <body>
+        <form id="search-form">
+            <input id="search-input" type="text" placeholder="Search for a movie" required>
+            <button id="search-btn">Search</button>
+        </form>
+        <div id="results-container">
+            
+            <!-- Search results load here -->
+            
+            <div id="load-graphic" class="hidden"></div>
+            <div  id="welcome-msg">
+                <img id="film-icon" src="/Images/film-icon.png">
+                <p>Start exploring</p>
+            </div>
+        </div>
+        <script src="./JS/index.js" type="module"></script>
+    </body>
+</html>
